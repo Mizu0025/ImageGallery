@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+        <button id="themeToggle" class="theme-button">🌙 Night Mode</button>
+    </div>
+    <div class="gallery-container">
+        <div class="main-image-container">
+            <img id="mainImage" class="main-image" src="" alt="">
+            <div id="mainImageCaption" class="image-caption"></div>
+        </div>
+        <button class="nav-button prev" onclick="navigateImages(-1)">&#9664;</button>
+        <button class="nav-button next" onclick="navigateImages(1)">&#9654;</button>
+        <div id="thumbnails" class="thumbnails-container"></div>
+        <button class="load-more" onclick="loadMoreImages()">Load More</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
